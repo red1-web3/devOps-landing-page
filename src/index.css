@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer components {
+  .container-p {
+    @apply xl:w-[1200px] xl:mx-auto xl:px-0 px-8;
+  }
+}
+
+body {
+  @apply font-primary bg-secondary overflow-x-hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.col-2 {
+  @apply grid md:grid-cols-2 grid-cols-1 gap-7;
+}
+.col-3 {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[60px] gap-y-[100px];
+}
+@layer utilities {
+  .rotate-animation {
+    animation: animate 300ms ease;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotateY(4turn);
+      @apply text-slate-600;
+    }
+  }
+}
+#root {
+  @apply max-w-[100w] overflow-x-hidden;
+}
