@@ -3,8 +3,8 @@ import React from "react";
 import { whatWeCanDo } from "../data/Constant";
 import classNames from "classnames";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +13,7 @@ export default function CloudComponents() {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".__whatwecando",
-        start: "top 100px",
+        start: "top 40%",
       },
     });
     tl.to(".__cards", {

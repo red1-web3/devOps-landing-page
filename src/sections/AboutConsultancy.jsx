@@ -12,7 +12,7 @@ function AboutConsultancy() {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".__aboutConsultancySection",
-        start: "top center",
+        start: "top 60%",
       },
     });
 

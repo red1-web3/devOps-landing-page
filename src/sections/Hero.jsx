@@ -6,14 +6,8 @@ import { gsap } from "gsap";
 
 export default function Hero() {
   useEffect(() => {
-    let tl = gsap.timeline();
-
-    gsap
-      .timeline()
-      .to(".HEROIMAGE", { duration: 0.8, opacity: 1, ease: "back", x: 0 });
-    gsap
-      .timeline()
-      .to(".HEROTEXT", { duration: 0.8, opacity: 1, ease: "back", x: 0 });
+    gsap.to(".HEROIMAGE", { duration: 0.8, opacity: 1, ease: "back", x: 0 });
+    gsap.to(".HEROTEXT", { duration: 0.8, opacity: 1, ease: "back", x: 0 });
   }, []);
 
   return (
